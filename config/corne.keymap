@@ -36,8 +36,8 @@
 
             bindings = <
 &trans      &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PERCENT    &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH
-&caps_word  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0         &kp UNDERSCORE  &kp PLUS       &kp TILDE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_ALT
+&caps_word  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &kp MINUS       &kp EQUAL      &kp GRAVE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE
+&trans      &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0         &kp UNDERSCORE  &kp PLUS       &kp TILDE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LEFT_ALT
                                         &trans        &trans        &trans         &trans          &trans         &trans
             >;
         };
