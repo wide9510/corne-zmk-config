@@ -20,6 +20,30 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        L_Control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <16 15>;
+        };
+
+        R_Control {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <19 20>;
+        };
+
+        L_Command {
+            bindings = <&kp LEFT_COMMAND>;
+            key-positions = <16 14>;
+        };
+
+        R_Command {
+            bindings = <&kp RIGHT_COMMAND>;
+            key-positions = <19 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -31,10 +55,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W                &kp E                &kp R              &kp T        &kp Y      &kp U               &kp I                 &kp O                 &kp P     &kp ESCAPE
-&kp LEFT_COMMAND  &kp A  &bhm LEFT_COMMAND S  &bhm LEFT_CONTROL D  &bhm LEFT_SHIFT F  &kp G        &kp H      &bhm RIGHT_SHIFT J  &bhm RIGHT_CONTROL K  &bhm RIGHT_COMMAND L  &kp SEMI  &kp SQT
-&none             &kp Z  &kp X                &kp C                &kp V              &kp B        &kp N      &kp M               &kp COMMA             &kp DOT               &kp FSLH  &kp RIGHT_ALT
-                                              &mo 2                &none              &kp SPACE    &kp ENTER  &kp BACKSPACE       &mo 1
+&kp TAB           &kp Q  &kp W  &kp E  &kp R           &kp T        &kp Y            &kp U          &kp I      &kp O    &kp P     &kp ESCAPE
+&kp ENTER         &kp A  &kp S  &kp D  &kp F           &kp G        &kp H            &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_COMMAND  &kp Z  &kp X  &kp C  &kp V           &kp B        &kp N            &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_ALT
+                                &mo 2  &kp LEFT_SHIFT  &kp SPACE    &kp RIGHT_SHIFT  &kp BACKSPACE  &mo 1
             >;
         };
 
@@ -65,6 +89,15 @@
 &none  &kp K_COPY    &kp K_PASTE   &kp F11       &kp F5        &kp F10         &kp LEFT        &kp DOWN          &kp UP_ARROW  &kp RIGHT  &kp C_VOLUME_DOWN  &bt BT_PRV
 &none  &none         &none         &none         &none         &none           &trans          &trans            &trans        &trans     &kp K_MUTE         &bt BT_CLR
                                    &trans        &trans        &trans          &trans          &trans            &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
