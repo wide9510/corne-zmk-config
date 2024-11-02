@@ -23,36 +23,6 @@
     combos {
         compatible = "zmk,combos";
 
-        L_Control {
-            bindings = <&sk LEFT_CONTROL>;
-            key-positions = <16 15>;
-        };
-
-        R_Control {
-            bindings = <&sk RIGHT_CONTROL>;
-            key-positions = <19 20>;
-        };
-
-        L_Command {
-            bindings = <&sk LEFT_COMMAND>;
-            key-positions = <16 14>;
-        };
-
-        R_Command {
-            bindings = <&sk RIGHT_COMMAND>;
-            key-positions = <19 21>;
-        };
-
-        R_Ctrl+Shift {
-            bindings = <&sk RS(RCTRL)>;
-            key-positions = <19 22>;
-        };
-
-        L_Ctrl+Shift {
-            bindings = <&sk RS(RCTRL)>;
-            key-positions = <16 13>;
-        };
-
         boot_r {
             bindings = <&bootloader>;
             key-positions = <33 34 35 32>;
@@ -76,7 +46,7 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp F  &kp P           &kp B        &kp J  &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
-&kp ENTER  &kp A  &kp R  &kp S  &bhm 1 T        &kp G        &kp M  &bhm 1 N       &kp E          &kp I    &kp O          &kp SQT
+&kp ENTER  &kp A  &kp R  &kp S  &kp T           &kp G        &kp M  &kp N          &kp E          &kp I    &kp O          &kp SQT
 &none      &kp Z  &kp X  &kp C  &kp D           &kp V        &kp K  &kp H          &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
                          &mo 2  &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp BACKSPACE  &kp RIGHT_ALT
             >;
@@ -105,10 +75,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp F4    &kp F5    &kp F10       &kp F11    &none  &none
-&bootloader  &none         &kp K_PREVIOUS  &kp K_PLAY_PAUSE   &kp K_NEXT       &none           &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
-&none        &none         &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &trans    &trans    &trans        &trans     &none  &none
-                                           &trans             &trans           &trans          &trans    &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2       &bt BT_SEL 3     &bt BT_SEL 4    &kp F4    &kp F5    &kp F10       &kp F11    &none  &none
+&none       &none         &kp K_PREVIOUS  &kp K_PLAY_PAUSE   &kp K_NEXT       &none           &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &none  &none
+&none       &none         &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none           &trans    &trans    &trans        &trans     &none  &none
+                                          &trans             &trans           &trans          &trans    &trans    &trans
             >;
         };
     };
