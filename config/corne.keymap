@@ -16,7 +16,7 @@
             tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&lt>, <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -45,10 +45,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F  &kp P           &kp B        &kp J  &kp L          &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
-&kp ENTER  &kp A  &kp R  &kp S  &kp T           &kp G        &kp M  &kp N          &kp E          &kp I    &kp O          &kp SQT
-&none      &kp Z  &kp X  &kp C  &kp D           &kp V        &kp K  &kp H          &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                         &mo 2  &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp BACKSPACE  &kp RIGHT_ALT
+&kp TAB    &kp Q  &kp W  &kp F  &kp P           &kp B        &kp J  &kp L                 &kp U          &kp Y    &kp SEMICOLON  &kp ESCAPE
+&kp ENTER  &kp A  &kp R  &kp S  &bhm LCTRL T    &kp G        &kp M  &bhm RIGHT_CONTROL N  &kp E          &kp I    &kp O          &kp SQT
+&none      &kp Z  &kp X  &kp C  &kp D           &kp V        &kp K  &kp H                 &kp COMMA      &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                         &mo 2  &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp BACKSPACE         &kp RIGHT_ALT
             >;
         };
 
