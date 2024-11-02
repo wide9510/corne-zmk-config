@@ -10,23 +10,49 @@
 
 / {
     behaviors {
-        bhm: balanced_homerow_mods {
+        hrm_tl: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;    // <---[[moderate duration]]
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
+
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 40 41 39>;
         };
 
-        hrm: hrm {
+        hrm_lr: hrm_lr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
+            label = "HRM_LR";
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+
+        hrm_tr: hrm_tr {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            label = "HRM_TR";
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
+
+        hrm_ll: hrm_ll {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LL";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
         };
     };
 
@@ -55,10 +81,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W     &kp F        &kp P           &kp B        &kp J  &kp L                 &kp U          &kp Y     &kp SEMICOLON  &kp ESCAPE
-&kp ENTER  &kp A  &hrm 1 R  &bhm LCMD S  &bhm LCTRL T    &kp G        &kp M  &bhm RIGHT_CONTROL N  &bhm RCMD E    &hrm 1 I  &kp O          &kp SQT
-&none      &kp Z  &kp X     &kp C        &kp D           &kp V        &kp K  &kp H                 &kp COMMA      &kp DOT   &kp FSLH       &kp RIGHT_SHIFT
-                            &mo 2        &kp LEFT_SHIFT  &kp SPACE    &mo 1  &kp BACKSPACE         &kp RIGHT_ALT
+&kp TAB    &kp Q  &kp W        &kp F           &kp P            &kp B        &kp J  &kp L                    &kp U           &kp Y        &kp SEMICOLON  &kp ESCAPE
+&kp ENTER  &kp A  &hrm_ll 1 R  &hrm_tl LCMD S  &hrm_tl LCTRL T  &kp G        &kp M  &hrm_tr RIGHT_CONTROL N  &hrm_tr RCMD E  &hrm_lr 1 I  &kp O          &kp SQT
+&none      &kp Z  &kp X        &kp C           &kp D            &kp V        &kp K  &kp H                    &kp COMMA       &kp DOT      &kp FSLH       &kp RIGHT_SHIFT
+                               &mo 2           &kp LEFT_SHIFT   &kp SPACE    &mo 1  &kp BACKSPACE            &kp RIGHT_ALT
             >;
         };
 
