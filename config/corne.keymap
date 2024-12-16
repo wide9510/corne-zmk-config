@@ -85,10 +85,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q        &kp W        &kp F           &kp P                     &kp B    &kp J          &kp L                    &kp U           &kp Y        &kp SEMICOLON  &kp ESCAPE
-&kp ENTER  &hrm_ll 2 A  &hrm_ll 1 R  &hrm_tl LCMD S  &hrm_tl LCTRL T           &kp G    &kp M          &hrm_tr RIGHT_CONTROL N  &hrm_tr RCMD E  &hrm_lr 1 I  &hrm_lr 2 O    &kp SQT
-&kp TAB    &kp Z        &kp X        &kp C           &kp D                     &kp V    &kp K          &kp H                    &kp COMMA       &kp DOT      &kp FSLH       &kp RIGHT_ALT
-                                     &mo 2           &hrm_tl LEFT_SHIFT SPACE  &none    &kp BACKSPACE  &kp RIGHT_SHIFT          &none
+&kp TAB    &kp Q        &kp W        &kp F           &kp P            &kp B        &kp J          &kp L                    &kp U           &kp Y        &kp SEMICOLON  &kp ESCAPE
+&kp ENTER  &hrm_ll 2 A  &hrm_ll 1 R  &hrm_tl LCMD S  &hrm_tl LCTRL T  &kp G        &kp M          &hrm_tr RIGHT_CONTROL N  &hrm_tr RCMD E  &hrm_lr 1 I  &hrm_lr 2 O    &kp SQT
+&kp TAB    &kp Z        &kp X        &kp C           &kp D            &kp V        &kp K          &kp H                    &kp COMMA       &kp DOT      &kp FSLH       &kp RIGHT_ALT
+                                     &mo 2           &kp LEFT_SHIFT   &kp SPACE    &kp BACKSPACE  &kp RIGHT_SHIFT          &none
             >;
         };
 
